@@ -12,6 +12,9 @@ WORKDIR /app
 # Copy the jar from the build stage
 COPY --from=build /app/target/*.jar app.jar
  
+#Cloud Run will set PORT dynamically
+ENV PORT=8080
+
 # Expose port 8080 for your Spring Boot app
 EXPOSE 8080
  
