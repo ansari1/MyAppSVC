@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/projectforpoc-489612/gcp-poc-app', '.']
+    args: ['build', '-t', 'gcr.io/gcpmyapp/gcp-appimage', '.']
 
 images:
   - 'gcr.io/gcpmyapp/gcp-appimage'
